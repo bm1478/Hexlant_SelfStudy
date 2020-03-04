@@ -4,9 +4,9 @@ var Web3 = require('web3');
 var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 var Tx = require('ethereumjs-tx').Transaction;
 
-const send_account = "0xA65DEBF2b8A3635a8F23ebe7EE080247c97B1F23";
-const receive_account = "0x438961DE7cf1a96eBdD56dCdf69aC3Bf64352fc3";
-const privateKey = Buffer.from("ff26c419d8a00cab5cf94b5699df074bd5bdec9c05920508d6b9361001b71a55", "hex");
+const send_account = "<Send Account>";
+const receive_account = "<Receive Account>";
+const privateKey = Buffer.from("<Private Key>", "hex");
 
 var solc = require('solc');
 var fs = require('fs');

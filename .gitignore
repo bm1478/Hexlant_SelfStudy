@@ -1,10 +1,9 @@
 /expressjs/node_modules/
-/expressjs/myapp/node_modules/
+/expressjs/express-tutorial/node_modules/
 /w3-school/nodejs/node_modules/
 /web3js-tutorial/node_modules/
 /expressjs/express-tutorial/node_modules/
-/eosjs-tutorial/node_modules/
 /BitcoinSV/node_modules/
-/BitcoinSV testnet.rtf
-/Bitcoinj/node_modules/
-/Bitcoinj/main.js
+/BitcoinSV/BitcoinSV testnet.rtf
+/BitcoinSV/Bitcoinj/node_modules/
+/BitcoinSV/main.js

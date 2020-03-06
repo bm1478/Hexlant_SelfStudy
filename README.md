@@ -3,5 +3,4 @@
 For Hexlant Study
 - Node.js
 - Ethereum Web3.js
-- Eos eos.js
-- bitcoinsv
+- Bitcoinsv Using BitcoinCli, Bitcoinj

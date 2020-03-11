@@ -1,8 +1,8 @@
 const axios = require('axios');
 
-const host = '127.0.0.1';
+//const host = '127.0.0.1';
 //const host = '192.168.0.67';
-//const host = '49.50.164.142';
+const host = '49.50.164.142';
 const port = '8332';
 
 let makeReq = function makeRequest(methodString, ...params) {
@@ -11,8 +11,8 @@ let makeReq = function makeRequest(methodString, ...params) {
         url: 'http://' + host + ':' + port + '/',
         headers: {'Content-Type': 'text/plain'},
         auth: {
-            username:'beoms',
-            //username: 'bitcoin',
+            //username:'beoms',
+            username: 'bitcoin',
             password: 'password'
         },
         data: JSON.stringify({
@@ -80,12 +80,19 @@ async function getUTXO(txId, index) {
     let getUTXORequest = makeReq('gettxout', txId, index);
     let result = await axios(getUTXORequest);
     return (result.data.result);
-}
+};
 
 // 7. send raw transaction
 async function sendRawTransaction(rawTx) {
     let sendRawTransactionRequest = makeReq('sendrawtransaction', rawTx);
     let result = await axios(sendRawTransactionRequest);
+    return (result.data.result);
+};
+
+// 8. decode raw transaction
+async function decodeRawTransaction(rawTx) {
+    let decodeRawTransactionRequest = makeReq('decoderawtransaction', rawTx);
+    let result = await(axios(decodeRawTransactionRequest));
     return (result.data.result);
 }
 
@@ -98,4 +105,5 @@ module.exports = {
     getListReceivedByAddress,
     getUTXO,
     sendRawTransaction,
+    decodeRawTransaction,
 };

@@ -3,9 +3,11 @@ let privateKey = bsv.PrivateKey.fromRandom('testnet');
 let publicKey = bsv.PublicKey.fromPrivateKey(privateKey);
 let address = bsv.Address.fromPublicKey(publicKey, 'testnet');
 
+console.log(privateKey.toWIF());
+console.log(publicKey.toHex());
 console.log(address.toString());
 
-var networkMagic = {
+/*var networkMagic = {
     livenet: 0xe3e1f3e8,
     testnet: 0xf4e5f3f4,
     regtest: 0xdab5bffa,
@@ -35,5 +37,5 @@ var testNetwork = {
     xpubkey: 0x043587cf,
     xprivkey: 0x04358394,
     networkMagic: TESTNET.NETWORK_MAGIC
-};
+};*/
 

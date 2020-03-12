@@ -1,5 +1,5 @@
 // Module and Net Parameter
-const bitcoinSVRPC = require("./bitcoinSVRPC.js");
+const bitcoinSVRPC = require("../bitcoinSVRPC.js");
 const bitcoin = require('bitcoinjs-lib');
 const fs = require('fs');
 const BITCOIN_SV_TESTNET = {

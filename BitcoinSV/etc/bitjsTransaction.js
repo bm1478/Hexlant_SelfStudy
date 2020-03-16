@@ -1,5 +1,5 @@
 // Module and Net Parameter
-const bitcoinSVRPC = require("../bitcoinSVRPC.js");
+const bitcoinSVRPC = require("../bitcoin-sv-rpc.js");
 const bitcoin = require('bitcoinjs-lib');
 const fs = require('fs');
 const BITCOIN_SV_TESTNET = {
@@ -44,7 +44,7 @@ bitcoinSVRPC.getTransactionInfo(txId).then(result => {
             'utxo': myUTXO[i]
         }
         utxoInfo = JSON.stringify(utxoInfo);
-        fs.writeFileSync('utxoInfo.json', utxoInfo, 'utf-8');
+        fs.writeFileSync('utxo-info.json', utxoInfo, 'utf-8');
     }
 
     // Transaction

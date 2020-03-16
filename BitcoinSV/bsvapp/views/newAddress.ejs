@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h3><%= title %></h3>
+<form action="/bsv-api/newAddressFromSeed" method="post">
+    <table>
+        <tr>
+            <td>Your Seed: </td>
+            <td><input type="text" name="fromSeed"></td>
+        </tr>
+        <tr>
+            <td>Network: </td>
+            <td><input type="text" name="netParameter"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="새 주소 받기"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

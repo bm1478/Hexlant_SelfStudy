@@ -10,7 +10,7 @@ $ docker run --rm --name bitcoind bitcoinsv/bitcoin-sv bitcoind -testnet -excess
 
 2. 새 터미널을 열고 bitcoinsv testnet client 접속
 ```zsh
-$ docker run --rm --network container:bitcoind bitcoinsv/bitcoin-sv bitcoin-cli -testnet help
+$ docker run --rm --network container:bitcoind bitcoinsv/bitcoin-sv bitcoin-cli -testnet -rpcport=8332 help
 ```
 - 컨테이너 이름이 'bitcoind'인 컨테이너에 접속해 bitcoin-cli를 실행하고, 사용가능한 명령어를 볼 수 있음.
 - 모든 작업을 마치면 --rm 옵션으로 인해 컨테이너 삭제

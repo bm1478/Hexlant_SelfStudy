@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('transactions', {
+    return sequelize.define('utxo', {
         address: {
             type: DataTypes.STRING(35),
             allowNull: false,
@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
         },
         satoshis: {
-            type: DataTypes.FLOAT,
+            type: DataTypes.BIGINT,
             allowNull: false,
         },
         is_spent: {

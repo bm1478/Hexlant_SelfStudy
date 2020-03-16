@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h3><%= title %></h3>
+<form action="/bsv-api/getLastBlock" method="post">
+    <table>
+        <tr>
+            <td><%= result %></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="정보 보기"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

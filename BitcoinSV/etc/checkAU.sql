@@ -1,3 +1,5 @@
+show databases;
+create database bitcoinsv;
 use bitcoinsv;
 show tables;
 -- drop table addresses;

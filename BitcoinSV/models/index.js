@@ -12,20 +12,22 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
+  // eslint-disable-next-line max-len
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
 fs
-  .readdirSync(__dirname)
-  .filter(file => {
-    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-  })
-  .forEach(file => {
-    const model = sequelize['import'](path.join(__dirname, file));
-    db[model.name] = model;
-  });
+    .readdirSync(__dirname)
+    .filter((file) => {
+      // eslint-disable-next-line max-len
+      return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
+    })
+    .forEach((file) => {
+      const model = sequelize['import'](path.join(__dirname, file));
+      db[model.name] = model;
+    });
 
-Object.keys(db).forEach(modelName => {
+Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }
@@ -34,7 +36,7 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.utxo = require('./Utxo.js')(sequelize, Sequelize);
-db.address = require('./Address.js')(sequelize, Sequelize);
+db.utxos = require('./utxo.js')(sequelize, Sequelize);
+db.addresses = require('./address.js')(sequelize, Sequelize);
 
 module.exports = db;

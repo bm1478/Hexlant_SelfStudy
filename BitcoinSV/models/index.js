@@ -38,5 +38,6 @@ db.Sequelize = Sequelize;
 
 db.utxos = require('./utxo.js')(sequelize, Sequelize);
 db.addresses = require('./address.js')(sequelize, Sequelize);
+db.blocks = require('./block.js')(sequelize, Sequelize);
 
 module.exports = db;

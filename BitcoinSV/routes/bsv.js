@@ -96,21 +96,26 @@ router.post('/getAddressFromSeed', async function(req, res) {
 
 // 4. 비트코인 전송해보기 - only from normal sig -> to normal and multi
 router.post('/sendBSV', async function(req, res) {
-  if(req.body.toAddress === undefined || req.body.amount === undefined || req.body.netParameter === undefined) {
-    res.send("Need JSON Body - toAddress, amount, feeBlock(option, default = 6), netParameter and multiSigOutFlag(option, default = false");
+  if(req.body.dest === undefined || req.body.amount === undefined || req.body.netParameter === undefined) {
+    res.send("Need JSON Body - dest, amount, feeBlock(option, default = 6)," +
+      " netParameter toThreshold(option, default 1) and multiSigOutFlag(option, default = false)");
   }
-  const toAddress = req.body.toAddress;
+  const dest = req.body.dest;
   const amount = parseFloat(req.body.amount);
   let feeBlock = 6;
   if(!(req.body.feeBlock === undefined)) {
     feeBlock = parseInt(req.body.feeBlock);
   }
   const netParameter = req.body.netParameter;
+  let toThreshold = 1;
+  if(!(req.body.toThreshold === undefined)) {
+    toThreshold = req.body.toThreshold;
+  }
   let multiSigOutFlag = false;
   if(!(req.body.multiSigOutFlag === undefined)) {
     multiSigOutFlag = req.body.multiSigOutFlag;
   }
-  const result = await transactionService.sendToAddress(toAddress, amount, feeBlock, netParameter, multiSigOutFlag);
+  const result = await transactionService.sendTo(dest, amount, feeBlock, netParameter, toThreshold, multiSigOutFlag);
   res.send(result);
 });
 

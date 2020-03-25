@@ -98,6 +98,14 @@ async function estimateFee(target) {
   return result.data.result;
 }
 
+// 7. sign raw transaction
+async function signRawTransaction(rawTx, privateKey) {
+  const pk = [];
+  pk.push(privateKey);
+  const result = await aliveAxios(makeReq('signrawtransacion', rawTx, null, pk, "ALL|FORKID"));
+  return result.data.result;
+}
+
 module.exports = {
   getTransactionInfo,
   getBalance,
@@ -108,4 +116,5 @@ module.exports = {
   sendRawTransaction,
   decodeRawTransaction,
   estimateFee,
+  signRawTransaction
 };

@@ -3,7 +3,7 @@ const {utxos, addresses, blocks}= require('../models');
 const coinType = "Bitcoin SV";
 
 // 1. Save UTXO From TxId - tx 에서 utxo 저장하기 (기존 쌓인 블록에서 추출한 트랜잭션)
-// 내 주소와 연관된 utxo 만 추출
+// 내 주소와 연관된 utxo 만 추출 (일반 서명)
 async function saveUTXOFromTxID(txId) {
   const rpcResult = await bitcoinSVRPC.getTransactionInfo(txId);
   const utxoList = [];

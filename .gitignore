@@ -4,3 +4,6 @@
 /web3js-tutorial/node_modules/
 /BitcoinSV/node_modules/
 /BitcoinSV/etc/Bitcoinj/node_modules/
+/Ethereum/testRawTx.js
+/Ethereum/tx-test.js
+/Ethereum/node_modules/

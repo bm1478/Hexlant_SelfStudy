@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.33",
     "ethereumjs-tx": "^2.1.2",
     "fs": "0.0.1-security",
     "web3": "^1.2.6"

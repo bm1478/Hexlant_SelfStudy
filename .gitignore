@@ -1,9 +1,10 @@
 /expressjs/node_modules/
 /expressjs/express-tutorial/node_modules/
 /w3-school/nodejs/node_modules/
-/web3js-tutorial/node_modules/
 /BitcoinSV/node_modules/
-/BitcoinSV/etc/Bitcoinj/node_modules/
+/BitcoinSV/bip44-path.json
+/BitcoinSV/bip44-seed.json
+/BitcoinSV/services/will-be-Scheduler.js
 /Ethereum/ropstenAPIKey.json
 /Ethereum/node_modules/
 /Ethereum/testRawTx.js

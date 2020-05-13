@@ -1,7 +1,18 @@
-# Docker, Jenkins 를 활용한 CI/CD
+# Docker 를 활용한 CI/CD
 
 - CI (Continuous Integration)
 지속적인 통합, 개발자를 위한 자동화 프로세스 중 하나이며 어플리케이션을 변경할 때 자동으로 빌드 및 테스트 되어 Github 공유 레포지토리에 병합된다.
+
+    - 코드 저장소(Code Repostiory)
+    - 자동화된 빌드
+    - 자동화된 테스팅
+    - 일관된 커밋 규칙을 갖기
+    - 동작 가능한 커밋하기
+    - 빠른 빌드되기
+    - Stage 환경 갖추기
+    - Nightly build 환경 갖추기
+    - 개방된 CI 결과
+    - 자동화된 배포
 
 - CD (Continous Deployment)
 지속적인 배포, 어플리케이션 변경 사항이 공유 레포지토리에서 사용자가 사용 가능한 환경까지 자동으로 배포하는 것. 사용자의 피드백 빠르게 반영
@@ -40,7 +51,7 @@ Docker의 기본 네트워크 모드는 Bridge 모드로 약간의 성능 손실
 
 컨테이너 삭제시 유지해야하는 데이터는 반드시 컨테이너 내부가 아닌 외부 스토리지에 저장 (Data Volumes or AWS S3)
 Ex) 
-```zsh
+```shell script
 # after
 docker run -d -p 3306:3306 \
   -e MYSQL_ALLOW_EMPTY_PASSWORD=true \
@@ -51,5 +62,24 @@ docker run -d -p 3306:3306 \
 
 - Docker Compose
 YAML 방식 설정 파일 이용한 Docker Compose로 컨테이너 생성 쉽게 가능.
+
+- Docker 설치 (Linux 기준)
+```shell script
+curl -fsSL https://get.docker.com/ | sudo sh
+sudo usermod -aG docker your-user # your-user 사용자에게 권한주기
+```
+
+- Docker 명령어
+```shell script
+docker ps
+docker images
+docker search [검색할이미지명]
+docker pull [다운받을이미지명]
+docker run [image name]  //forground 로 컨테이너 실행
+docker run -d [image name] //backgorund 로 컨테이너 실행
+docker exec -it [image name || container name] /bin/bash
+docker exec -it -u root [image name || container name] /bin/bash         //루트권한으로 들어가기
+```
+
 
 

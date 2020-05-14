@@ -1,4 +1,5 @@
 const GitHub = require('./lib/github');
+require('dotenv').config();
 
 describe('Integration with GitHub API', () => {
     let github

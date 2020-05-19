@@ -1,10 +1,21 @@
 # Jest
 
-Javascript Test Tool
+Javascript Test Tool, 테스팅 프레임워크 (Test Runner, Test Mathcer, Test Mock 다 제공)
+
+lint가 코드 스타일에 rule 을 정하는 것이라면 Jest는 코드가 올바른 기능을 하는 지 체크 가능.
+
 Zero-configuration (설정 없는 테스트 환경 제공)
 
+Jest 는 크게 Global Function (테스트 설정), Matcher (결과에 따른 Matcher)로 구성.
+
+단위테스트는
+
+    - 독립적
+    - 격리
+    - given, when, then 단계에 따라 테스트 코드를 작성.
+    
 ```shell script
-npm install --save -dev jest
+npm install --save -dev jest (개발 시 사용하는 패키지 설치, 배포 시에는 포함되지 않음.)
 ```
 
 - Common Matchers

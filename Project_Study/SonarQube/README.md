@@ -16,7 +16,13 @@ Github 연동 가능하고 적절한 구성 시 코드 수정하는 동시에 �
 ```shell script
 docker pull sonarqube
 docker run -d --name sonarqube -p 9000:9000 sonarqube
-docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+```
+- Docker Host Requirement
+```shell script
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
 ```
 
 - Jenkins 홈페이지 설정
@@ -30,3 +36,4 @@ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
     - 프로젝트 설정: Administaration > Projects > Project Management > Create Project > Name, Key 임의로 가입 > Create 버튼
         - ```property "sonqr.projectKey", "sonar:PUBGLog" (Key)```
         - ```property "sonqr.projectName", "PUBGLOG (Name)```
+

@@ -1,4 +1,4 @@
-# Hexlant_SelfStudy
+# Intern_SelfStudy
 
 For Hexlant Study
 - Node.js

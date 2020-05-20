@@ -28,7 +28,17 @@ ulimit -u 4096
 - Jenkins 홈페이지 설정
     - Jenkins > 플러그인 관리 > Sonarqube Scanner for jenkins Plugin 설치
     - Jenkins > 시스템 설정 > SonarQube servers
-    
+    - ```
+          sonar.login = 토큰
+          sonar.projectKey = 프로젝트키
+          sonar.projectName= 프로젝트명
+          sonar.host.url = http://소나큐브 서버 주소
+          sonar.report.export.path = sonar-report.json
+          sonar.projectVersion=1.0
+          sonar.sourceEncoding=UTF-8
+          ``` 
+        - 이런식으로 Jenkins 프로젝트 Build > Execute Sonarqube Scanner
+        - Nodejs 플러그인 설치 후 v.12.15.0 자동 설치.
 - SonarQube 설정
     - 초기 아이디 비밀번호: admin/admin
     - 로그인 토큰 설정: Administration > Security > Users > Create User > Tokens > 토큰 이름 기입 > Generate

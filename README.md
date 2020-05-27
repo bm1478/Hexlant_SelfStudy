@@ -2,5 +2,7 @@
 
 For Hexlant Study
 - Node.js
-- Ethereum Web3.js
 - BitcoinSV Using BitcoinCli, bsv
+- Ethereum Web3.js, open-zeppelin, truffle
+- Jenkins
+- Sonarqube

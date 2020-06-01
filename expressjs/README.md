@@ -72,3 +72,4 @@ module.exports = router;
 ```javascript
 var birds = require('./birds');
 app.use('/birds', birds);
+```

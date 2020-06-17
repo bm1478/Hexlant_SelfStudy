@@ -1,4 +1,4 @@
-# Understand Ethereum Transaction Structure
+# Understand Ethereum Structure
 
 1. 키와 주소
 
@@ -79,9 +79,11 @@ Account 상태 저장
 
 7. Gas
 
-Price: Gas 당 트랜잭션 요청자가 지급할 금액
+Gas Fee: 가스 수수료는 이더리움에서 요구하는 자원의 양과 복잡도에 따라 가치가 결정되는 수수료. 단위는 Gas
 
-Gas Limit: 트랜잭션 수행에 소비될 총 가스 예상량
+Gas Price: Gas 당 트랜잭션 요청자가 지급할 금액, 단위는 Wei/Gas. Ether의 가치 변동에 따라 실질적으로 동일한 가치를 얻을 수 있도록 변경됨. 채굴자는 가스 가격이 높은 트랜잭션부터 실행한다.
+
+Gas Limit: 트랜잭션 수행에 소비될 총 가스 예상량 최댓값, Gas Limit이 넘는 경우 그 이상은 처리하지 않고 실행 전 상태로 되돌림. 하지만 Gas는 채굴자에게 지불된다. 만약에 컨트랙트 측에서 잘못이 있어도 지불할 Gas는 Gas Limit 을 넘지 않음. 남은 Gas는 지불처로 되돌아옴.
 
 8. ERC 20 / ERC 721
 

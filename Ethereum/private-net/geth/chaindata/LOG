@@ -1,0 +1,55 @@
+=============== Jun 17, 2020 (KST) ===============
+17:33:06.255590 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:33:06.276667 db@open opening
+17:33:06.277448 version@stat F·[] S·0B[] Sc·[]
+17:33:06.287044 db@janitor F·2 G·0
+17:33:06.287100 db@open done T·10.409012ms
+17:33:06.292849 db@close closing
+17:33:06.292995 db@close done T·144.344µs
+=============== Jun 17, 2020 (KST) ===============
+17:36:29.530283 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:36:29.530549 version@stat F·[] S·0B[] Sc·[]
+17:36:29.530572 db@open opening
+17:36:29.530634 journal@recovery F·1
+17:36:29.534290 journal@recovery recovering @1
+17:36:29.541646 memdb@flush created L0@2 N·10 S·533B "HKu..\x13\xcf\x12,v3":"r\x00\x00..\x13\xcf\x12,v5"
+17:36:29.543663 version@stat F·[1] S·533B[533B] Sc·[0.25]
+17:36:29.573594 db@janitor F·3 G·0
+17:36:29.573627 db@open done T·43.044671ms
+17:45:45.768136 db@close closing
+17:45:45.768503 db@close done T·365.353µs
+=============== Jun 17, 2020 (KST) ===============
+17:51:45.882977 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:51:45.883604 version@stat F·[1] S·533B[533B] Sc·[0.25]
+17:51:45.883634 db@open opening
+17:51:45.883740 journal@recovery F·1
+17:51:45.885858 journal@recovery recovering @3
+17:51:45.922691 memdb@flush created L0@5 N·1 S·192B "Dat..ion,v12":"Dat..ion,v12"
+17:51:45.924831 version@stat F·[2] S·725B[725B] Sc·[0.50]
+17:51:45.963686 db@janitor F·4 G·0
+17:51:45.963715 db@open done T·80.070815ms
+18:02:04.254493 db@close closing
+18:02:04.259833 db@close done T·5.337871ms
+=============== Jun 17, 2020 (KST) ===============
+18:03:33.218570 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:03:33.219152 version@stat F·[2] S·725B[725B] Sc·[0.50]
+18:03:33.219181 db@open opening
+18:03:33.219296 journal@recovery F·1
+18:03:33.221406 journal@recovery recovering @6
+18:03:33.230988 memdb@flush created L0@8 N·2903 S·149KiB "\x0f>\xcc..\xa1\xfd\xff,v2915":"\xa5\xe5e..\b\xcb@,v2916"
+18:03:33.232989 version@stat F·[3] S·150KiB[150KiB] Sc·[0.75]
+18:03:33.280461 db@janitor F·5 G·0
+18:03:33.280491 db@open done T·61.299351ms
+18:40:31.342797 db@close closing
+18:40:31.347728 db@close done T·4.927881ms
+=============== Jun 17, 2020 (KST) ===============
+18:40:34.067216 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:40:34.067679 version@stat F·[3] S·150KiB[150KiB] Sc·[0.75]
+18:40:34.067708 db@open opening
+18:40:34.067817 journal@recovery F·1
+18:40:34.070066 journal@recovery recovering @9
+18:40:34.072251 version@stat F·[3] S·150KiB[150KiB] Sc·[0.75]
+18:40:34.247137 db@janitor F·5 G·0
+18:40:34.247169 db@open done T·179.449251ms
+18:59:16.813424 db@close closing
+18:59:16.813893 db@close done T·468.479µs

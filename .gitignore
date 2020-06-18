@@ -10,5 +10,6 @@
 /Ethereum/testRawTx.js
 /Ethereum/ropstenMnemonic.json
 /Project_Study/Jest/node_modules
+/Project_Study/API/node_modules
 /IPFS/node_modules
 /.idea

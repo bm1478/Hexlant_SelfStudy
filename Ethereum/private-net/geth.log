@@ -2180,3 +2180,33 @@ INFO [06-17|18:59:16.812] Persisted trie from memory database      nodes=2 size=
 INFO [06-17|18:59:16.812] Writing cached state to disk             block=313 hash="5d9709…bd5d9f" root="bf1029…ba8ace"
 INFO [06-17|18:59:16.812] Persisted trie from memory database      nodes=0 size=0.00B   time="1.113µs"   gcnodes=0 gcsize=0.00B gctime=0s livenodes=233 livesize=29.68KiB
 INFO [06-17|18:59:16.813] Blockchain stopped 
+INFO [06-18|10:11:47.452] Maximum peer count                       ETH=0 LES=0 total=0
+INFO [06-18|10:11:47.493] Starting peer-to-peer node               instance=Geth/v1.9.15-stable/darwin-amd64/go1.14.3
+INFO [06-18|10:11:47.494] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [06-18|10:11:47.495] Allocated cache and file handles         database=/Users/hexlant/Intern_SelfStudy/Ethereum/private-net/geth/chaindata cache=512.00MiB handles=5120
+INFO [06-18|10:11:47.579] Opened ancient database                  database=/Users/hexlant/Intern_SelfStudy/Ethereum/private-net/geth/chaindata/ancient
+INFO [06-18|10:11:47.589] Initialised chain configuration          config="{ChainID: <nil> Homestead: <nil> DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: <nil> EIP158: <nil> Byzantium: <nil> Constantinople: <nil> Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, YOLO v1: <nil>, Engine: unknown}"
+INFO [06-18|10:11:47.589] Disk storage enabled for ethash caches   dir=/Users/hexlant/Intern_SelfStudy/Ethereum/private-net/geth/ethash count=3
+INFO [06-18|10:11:47.590] Disk storage enabled for ethash DAGs     dir=/Users/hexlant/Library/Ethash count=2
+INFO [06-18|10:11:47.590] Initialising Ethereum protocol           versions="[65 64 63]" network=4649 dbversion=7
+INFO [06-18|10:11:47.592] Loaded most recent local header          number=440 hash="d15f90…49ae9f" td=64216789 age=15h13m39s
+INFO [06-18|10:11:47.592] Loaded most recent local full block      number=440 hash="d15f90…49ae9f" td=64216789 age=15h13m39s
+INFO [06-18|10:11:47.592] Loaded most recent local fast block      number=440 hash="d15f90…49ae9f" td=64216789 age=15h13m39s
+INFO [06-18|10:11:47.615] Loaded local transaction journal         transactions=1 dropped=1
+INFO [06-18|10:11:47.615] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [06-18|10:11:47.615] Switch sync mode from fast sync to full sync 
+INFO [06-18|10:11:47.675] New local node record                    seq=5 id=5c92ac78c6658130 ip=127.0.0.1 udp=0 tcp=30303
+INFO [06-18|10:11:47.676] Started P2P networking                   self="enode://0df059de9cb49e3d19df2e10195e248425740b583c7e6ec7c2ffa569e8e9ac3448f5a60215f468a699af48ae42632aa0c13a0f8f04a048aac132863839c57662@127.0.0.1:30303?discport=0"
+INFO [06-18|10:11:47.676] IPC endpoint opened                      url=/Users/hexlant/Intern_SelfStudy/Ethereum/private-net/geth.ipc
+INFO [06-18|10:11:47.754] Etherbase automatically configured       address=0x7ADEd620F39282ad106f54EcaEe1eD7FcEC37112
+INFO [06-18|10:11:49.816] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv2-IP1"
+INFO [06-18|10:12:00.490] IPC endpoint closed                      url=/Users/hexlant/Intern_SelfStudy/Ethereum/private-net/geth.ipc
+INFO [06-18|10:12:00.494] Ethereum protocol stopped 
+INFO [06-18|10:12:00.494] Transaction pool stopped 
+INFO [06-18|10:12:00.494] Writing cached state to disk             block=440 hash="d15f90…49ae9f" root="19f9ea…f9f866"
+INFO [06-18|10:12:00.494] Persisted trie from memory database      nodes=0 size=0.00B time="3.021µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-18|10:12:00.494] Writing cached state to disk             block=439 hash="224442…87956a" root="2cf85f…6f9e39"
+INFO [06-18|10:12:00.494] Persisted trie from memory database      nodes=0 size=0.00B time="1.866µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-18|10:12:00.494] Writing cached state to disk             block=313 hash="5d9709…bd5d9f" root="bf1029…ba8ace"
+INFO [06-18|10:12:00.494] Persisted trie from memory database      nodes=0 size=0.00B time="1.086µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-18|10:12:00.494] Blockchain stopped 

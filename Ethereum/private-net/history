@@ -50,3 +50,4 @@ eth.pendingTransactions
 eth.mining
 miner.stop()
 eth.mining
+eth.blockNumber

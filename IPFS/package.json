@@ -1,14 +1,15 @@
 {
-  "name": "ipfs",
+  "name": "IPFS",
   "version": "1.0.0",
-  "description": "",
-  "main": "../test_hexlant.js",
+  "description": "1. IPFS",
+  "main": "test_ipfs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "ipfs": "^0.46.0"
   }
 }

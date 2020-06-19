@@ -95,3 +95,23 @@ nohup: 유닉스 계열 OS 명령어, SIGHUP 무시한 상태로 프로세스 �
 geth attach rpc:http://localhost:8545
 ```
 를 통해 콘솔 접속할 수 있다. `ps -eaf | grep geth` 명령어로 pid 찾아 kill pid 로 geth를 종료할 수 있다.
+
+7. JSON-RPC
+
+```shell script
+nohup geth --networkid 4649 --nodiscover --maxpeers 0 --datadir Intern_SelfStudy/Ethereum/private-net --mine --minerthreads 1 --rpc --rcdaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" 2 >> Intern_SelfStudy/Ethereum/private-net/geth.log &
+```
+--rpc: HTTP-RPC 서버를 활성화
+
+--rpcaddr "0.0.0.0": HTTP-RPC 서버의 수신 IP를 지정. 기본값은 localhost, "0.0.0.0" 이면 다 접근 가능
+
+--rpcport 8545: HTTP-RPC 서버가 요청을 받기 위해 사용하는 포트 지정
+
+--rpccorsdomain "*": 자신의 노드에 RPC로 접속할 IP 주소를 지정. 쉼표로 구분해 여러 개 지정 가능, *일 경우 모든 IP 접속.
+
+--rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3": RPC를 허가할 명령 지정, 쉼표로 구분해 여러 개 지정 가능
+
+ex)
+```shell script
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccount","params":["pass3"],"id":10}' localhost:8545
+```
